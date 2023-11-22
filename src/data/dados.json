@@ -1,0 +1,39 @@
+{
+    "Medicamento": [
+    {
+        "id_medicamento": 1,
+        "nome_medicamento": "dipirok",
+        "fabricante": "Thairon R",
+        "preço":11.50,
+        "quantidade": 2
+    }
+    ],
+
+    "cursos":[
+    {
+        "id_cliente": 1,
+        "nome_cliente": "dipirok",
+        "endereço_cliente": "Rua rafael rossetow",
+        "email_cliente":"sla@gmail.com",
+        "telefone": "4002-8922"
+    }
+    ],
+
+    "fornecedor": [
+        {
+            "id_fornecedor": 1,
+        "nome_fornecedor": "dipirok",
+        "endereço_fornecedor": "Rua rafael rossetow",
+        "telefone_fornecedor": "4002-8922"
+        }
+    ],
+
+    "venda": [
+        {
+            "id_venda":1,
+            "data": "22/11/23",
+            "id_medicamento":1,
+            "id_cliente":1
+        }
+    ]
+}
