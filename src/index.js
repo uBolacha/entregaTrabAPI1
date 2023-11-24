@@ -44,7 +44,7 @@ server.post('/cliente', (req, res) =>{
     }
 })
 
-// Fornecedor
+
 server.post('/fornecedor', (req, res) =>{
     const newSupplier = req.body
 
@@ -57,7 +57,7 @@ server.post('/fornecedor', (req, res) =>{
     }
 })
 
-// Venda
+
 server.post('/venda', (req, res) =>{
     const newSale = req.body
 
@@ -69,34 +69,33 @@ server.post('/venda', (req, res) =>{
         return res.status(201).json({mensagem: 'Fornecedor cadastrados com sucesso.'})
     }
 })
-//////////////////////////////////////////////////////////////////
+
 
 //////////////////////////// GET /////////////////////////////////
 
-// Medicamento
+
 server.get('/medicamento', (req, res) =>{
     return res.json(dados.Medicamento)
 })
 
-// Cliente
 server.get('/cliente', (req, res) =>{
     return res.json(dados.Cliente)
 })
 
-// Fornecedor
+
 server.get('/fornecedor', (req, res) =>{
     return res.json(dados.Fornecedor)
 })
 
-// Venda
+
 server.get('/venda', (req, res) =>{
     return res.json(dados.Venda)
 })
-//////////////////////////////////////////////////////////////////
+
 
 ////////////////////////// UPDATE ////////////////////////////////
 
-// Medicamento
+
 server.put('/medicamento/:id', (req, res)=>{
     const id = parseInt(req.params.id)
     const updateMed = req.body
@@ -116,7 +115,7 @@ server.put('/medicamento/:id', (req, res)=>{
     }
 })
 
-// Cliente
+
 server.put('/cliente/:id', (req, res)=>{
     const id = parseInt(req.params.id)
     const updateClient = req.body
@@ -135,7 +134,7 @@ server.put('/cliente/:id', (req, res)=>{
         return res.json({mensagem: "Cliente atualizado com sucesso"})
     }
 })
-// Fornecedor
+
 server.put('/fornecedor/:id', (req, res)=>{
     const id = parseInt(req.params.id)
     const updateSupplier = req.body
@@ -154,7 +153,7 @@ server.put('/fornecedor/:id', (req, res)=>{
     }
 })
 
-// Venda
+
 server.put('/venda/:id', (req, res)=>{
     const id = parseInt(req.params.id)
     const updateSale = req.body
@@ -173,7 +172,7 @@ server.put('/venda/:id', (req, res)=>{
     }
 })
 
-//////////////////////////////////////////////////////////////////
+
 
 //////////////////////////// DELETE //////////////////////////////
 
@@ -188,7 +187,7 @@ server.delete('/medicamento/:id', (req, res) =>{
     return res.status(200).json({mensagem: "Medicamento deletado"})
 })
 
-// Cliente
+
 server.delete('/cliente/:id', (req, res) =>{
     const clientId = parseInt(req.params.id)
 
@@ -199,7 +198,7 @@ server.delete('/cliente/:id', (req, res) =>{
     return res.status(200).json({mensagem: "Cliente deletado"})
 })
 
-// Fornecedor
+
 server.delete('/fornecedor/:id', (req, res) =>{
     const supplierId = parseInt(req.params.id)
 
@@ -209,7 +208,7 @@ server.delete('/fornecedor/:id', (req, res) =>{
 
     return res.status(200).json({mensagem: "Cliente deletado"})
 })
-// Venda
+
 server.delete('/venda/:id', (req, res) =>{
     const saleId = parseInt(req.params.id)
 
